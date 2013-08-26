@@ -1,0 +1,2 @@
+1. The cascading in Cascading style sheets(CSS) is that if multiple effects are applied to the same element, there is a priority on which effect is applied, making CSS effects predictable.
+2. 
