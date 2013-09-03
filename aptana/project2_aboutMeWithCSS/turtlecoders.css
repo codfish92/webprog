@@ -1,0 +1,59 @@
+body {
+	background-color:#f4ffe4;
+	color: #333333;
+	font-family:Arial, Helvetica, sans-serif;
+}
+h1 {
+	font-family:Georgia, serif;
+}
+.company_name{
+	font-weight: bold;
+}
+#intro{
+	text-indent: 2em;
+}
+#services{
+	line-height: 150%;
+}
+.motto{
+	font-style: italic;
+}
+header{
+	background-color:#d5edb3;
+	text-align:center;
+	background-image: url(turtle2.gif);
+	background-position: right, top;
+	background-repeat:no-repeat;
+	text-shadow: 3px 3px 5px #666;
+	border: 1px solid #333333;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px #828282;
+}
+nav {
+	background-color: #d5edb3;
+
+	font-weight: bold;
+	text-indent: 20px;
+	margin-top: 5px; 
+}
+
+a{
+	text-decoration: none;
+}
+#wrapper{
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	min-width: 600px;
+	min-height: 550px;
+
+}
+#content{
+	margin-top: .5em;
+}

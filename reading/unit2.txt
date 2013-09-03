@@ -1,2 +1,30 @@
 1. The cascading in Cascading style sheets(CSS) is that if multiple effects are applied to the same element, there is a priority on which effect is applied, making CSS effects predictable.
-2. 
+2. selector declartion. Selector is anything that corresponds to an object, like a header or a id name. declartion is the 'code' that is applied to it. h2 {color:blue} will make all level 2 headers blue.
+3. 1.if its a simple color, you can just say color:xxx where xxx is a color, like red or blue.
+   2.Input the RBG values using color:rgb(rr,gg,bb) where r is for red, g is for green, and b is for blue. 
+   3.Input the hex code using color:#rrggbb where r, g, b are for red green blue respectively in hex.
+   4.state that color should be inherted
+   5. 
+4. id refer to one element, while a class selector selects a group of elements. a class selector may only modify one element, but could modify more.
+5.
+
+chapter 5:
+1. when minmum file size is a prority, or if uploading simple images. It also preserves transparency.
+2. a gif can be optimized by croping the image down as much as possible, having less colors, and having similar color near each other
+3. JPEG are best used for photographs, as they tend to compress the image well, and keep the image close to the orginal. Not as high quality as a tiff, but much more compressed.
+4.Pixelation is when you zoom in so much on a bitmap that you can see the individual pixels. 
+5. GIFs and PNGs are pretty similar, gifs tend to be a bit larger and dont have alpha transparency support, but can be animated and do still have transparancy. PNGs compress better and support alpha transpancy, but cant be animated. 
+6. You can make images more accesable by putting appropriate alt tag information (though there is no <alt> tag, it is refred to this way). This way important information regarding the images context or purpose can be shown. The alt tag should not contain a description of the image.
+
+chapter 6:
+1. Serif font has horizontal 'stands' at the bottoms of all letters, and tops of some. This makes the spacing and distinction between letters easier to see, but only on a high DPI surface. Computers only use about 100 DPI, where print is 1000. The serifs are hard for a computer to represent well, and the serifs also have trouble being visible in small font size. Sans serif removes the serifs and makes the images more simplistic, which is great for web and computers, but has problems when printed.
+2. Use similar, but different fonts. Use a sans for titles and a sarif for body, or visa versa. They are similar, but different; Use different sizes, the text all around the website can't serve the same purpose. Make headings big, body noticable, and captions small. ect.
+3. it is common to include more than one font type because the browser may not have the first font type. The order determines the order in which the browser will establish font. If the font name has spaces in it, it must be encapsulated with quotations. 
+4. you can scale text with em's %'s and ex's. em is a decimal number representing a coeffeicent of the browsers default size, ie 1.5em is 1.5 times bigger than standard. % works like em, but is a precentage instead of a coeffeicent, ie 46% = .46em = 46% of the size of base font. ex is the size of an x in base size, this tends to have funny numbers on it, as 1ex = .525em. 
+5. text transform does as the name applies, trasforms text. for instance capitalize will make the first letter of each word a capital. lowercase will make all letters lowercase. 
+6. use the line-height property. give a precentage of the default line spacing. You can make a class of double spaced linesand assign paragraphs to that class, or specify line-height for each paragraph. 
+7. text align will allign text relative to the page, like center or right. text indent will shift the block based of the parent. text align is similar to in a word processor using the justification(left, center, right ect.). While indenting is more like puting an extra space or tab during first line of a paragraph. 
+8. css comments take the form of a multi line comment in languages like c or java. /* indicates start, */ indicates the end.
+9.a margin specifies the a border around the outside of the element, and is transparent. a padding specifies the border inside of the element, and takes the color of the element. if you had a square with a yellow background, adding a margin on the left side would shift it to the right, but leave what appears to be blank space. Padding the same box would leave a yellow background color. 
+10. using auto with margins and paddings allows the window to be resized and have the margins adjusted so the element is still in the same relative place. ie if centering something, using text align and then setting margins to auto will have the text stay in center even if window is resized. this has problems when the window is smaller than the element however.
+11. margin 20px 10px == margin 20px 10px 20px 10px
