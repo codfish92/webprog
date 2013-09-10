@@ -1,0 +1,15 @@
+a:link{
+ 	color:#000000   
+}
+a:visted{
+    color:#0000ff
+}
+a:focus{
+    color:#00ff00
+}
+a:hover{
+    color:#ff0000
+}
+a:active{
+    color:#ff00ff
+}

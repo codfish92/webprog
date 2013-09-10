@@ -1,0 +1,34 @@
+h1{
+	background-color:blue;
+}
+
+
+
+.div1{
+	width: 200px;
+	height: 200px;
+	background-color: #d13cff;
+	border:dashed black 3px;
+	
+
+}
+
+.div2{
+	width: 100px
+	height 100px;
+	background-color: white;
+	border:dashed black 3px;
+	margin-left: 10px
+}
+
+#turtle_right{
+	float: right;
+	border: solid yellow 2px;
+	margin: 0px 0px 5px 5px;
+}
+
+#turtle_left{
+	float: left;
+	border: solid blue 2px;
+	margin: 0px 0px 5px 5px;
+}

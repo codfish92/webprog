@@ -1,0 +1,36 @@
+/*
+    clear seems to just remove the float features of a float, but leave it in its previous position
+	overflow: scroll adds scroll bars to the feature. these bars exist even if the element is big enough to be seen without them
+	overflow: hidden is a little weird, not sure what exactly it does, but it seems to ignore any formating restrictions that previously modified element. 
+*/
+
+h1{
+	background-color: blue;
+}
+
+#turtle_left{
+	float: left;
+	border: solid blue 2px;
+	margin: 0px 0px 5px 5px;
+}
+
+#cat_right{
+	float: right;
+	border: solid yellow 2px;
+	margin: 0px 0px 5px 5px;
+}
+.div3{
+	background-color:#bbe6e8;
+	width: 250px;
+	height: 180px;
+	overflow: auto;
+}
+.div4{
+	background-color:#f2a5f2;
+   
+}
+
+.clearright{
+ clear: right;
+    
+}
