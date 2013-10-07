@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="./forms.css" type="text/css">
+</head>
+
+<body>
+    <h1>All About You</h1>
+    <form name="aboutYou" method="post" id="aboutYou">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label>Name*:<input type="text" name="name" id="name" placeholder="Last First" size="35" required="required" ></label>
+            <label>Your Password you use for EVERYTHING*:</label><input type="password" name="password" id="password" required="required" size="25">
+            <br>
+            <label>Email:<input type="email" autocomplete="on"></label>
+            <label>Phone(no dashes):<input type="text" size="15" maxlength="11" pattern="[0-9]"></label>
+            <br>
+            <label>When is your birthday:<input type="date" name="birthday" id="birthday"></label>
+        </fieldset>
+        <br>
+        What browsers do you use?
+        <br>
+        <input type="checkbox" name="ie" id="ie" value="true">Internet Explorer(bleh)<br>
+        <input type="checkbox" name="aBrowser" id="aBrowser" value="true" checked="checkek">Any other Browser(even safari is better than IE)<br>
+        <br>
+        <br>
+        What is the motion you find hardest to do?<br>
+        <input type="radio" name="motions" id="qcf" value="true">Quarter circle forward<br>
+        <input type="radio" name="motions" id="dp" value="true">Dragon punch<br>
+        <input type="radio" name="motions" id="hcf" value="true">Half circle forward<br>
+        <br>
+        
+        <br>
+        How many numbers are there? Yogurt<input type="range" name="slider" id="slider">Darth Vader<br>
+        How many times did Ammey bark?<input type="spinner" name="spinner" id="spinner">
+        <br>
+        <br>
+        Bark?<select size="2" name="select" id="select">
+            <option value="bark">Bark!</option>
+            <option value="whine">Whine</option>
+            <option value="ring">ringdingdingdingdingaling
+</option>
+        <option value="doubleBark">Bark! Bark!</option>
+        <option value="headTwist">[Head Twist]</option>
+        </select>
+        <br>
+        <label for="pets">What is your favorite type of animal to have as a pet</label>
+        <input type="text" name="pets" id="pets" list="petTypes">
+            <datalist id="petTypes">
+                <option value="canine">
+                <option value="feline">
+                <option value="rodent">
+                <option value="marine">
+                <option value="reptile">
+            </datalist>
+        
+        <br>
+        Things you need to confess. Please go into great detail:<br>
+        <textarea name="comments" id="comments" col="100" rows="4" wrap="hard">Confess my child, so i may blackmail you with it later.</textarea>
+        <br>
+        <label><input type="submit" name="submit" id="submit"> </label>
+        <label><input type="reset" name="reset" id="reset" value="RAGE QUIT and try again?"> </label>
+    </form>
+</body>

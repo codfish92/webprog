@@ -1,0 +1,68 @@
+
+
+#table1{
+    border: solid;
+    border-color: rgb(0,222,0);  
+  
+    padding: 2px;
+    margin-bottom: 30px;
+    
+    
+}
+
+#table1 th{
+    background-color:#cccccc
+}
+
+thead{
+    background-color: rgb(150, 214, 234);   
+    color: #000066
+}
+#table2{
+    
+
+}
+
+tfoot{
+    background-color: rgb(213, 234, 247); 
+    color: #000066
+}
+caption{
+    font-size: 130%; 
+    font-weight: bold;
+}
+tr:first-of-type {font-weight: bold}
+
+
+#table2 td{
+    border-bottom: 1px black dashed ;
+    
+}
+
+#table2 tr:last-of-type td{
+  border: none;  
+}
+
+#table3{
+ border: solid #336633;
+    border-spacing: 0px;
+
+}
+#table3 thead{
+    color:white;
+    background-color:#336633
+}
+#table3 td{
+ border: 1px #336633 solid;   
+}
+
+#table3 tr:nth-of-type(odd) td{
+    background-color: #ffccff
+}
+
+
+table{
+    width: 75%;
+    margin: auto;
+    
+}

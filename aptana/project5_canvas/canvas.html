@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    
+    <body>
+        <h1>Canvas page!</h1>
+        <canvas id="someCanvas" width="500" height="300">Your a herp derp and dont use a modern browser.</canvas><br>
+    
+    <button id="toggleFace" type="button" onclick="drawFrowny()">Draw Frowny</button>
+    
+    </body>
+
+
+
+
+<script>
+    
+    var x=document.getElementById("someCanvas");
+    var squareBackground =x.getContext("2d");
+    squareBackground.fillStyle="#cccccc";
+    squareBackground.fillRect(0,0, 500, 300);
+    
+    var smileyBorder = x.getContext("2d");
+    smileyBorder.fillStyle="green";
+    smileyBorder.beginPath(); 
+    smileyBorder.arc(250,150,100,0, 2*Math.PI);
+    smileyBorder.fill();
+    
+    var eye = x.getContext("2d")
+    eye.fillStyle="yellow";
+    eye.beginPath();
+    eye.arc(200, 120, 10, 0, 2*Math.PI);
+    eye.fill();
+    
+    eye.arc(300, 120, 10, 0, 2*Math.PI);
+    eye.fill();
+    
+    
+    smile=x.getContext("2d");
+    smile.strokeStyle="yellow";
+    smile.lineWidth="5";
+    smile.beginPath()
+    smile.arc(250, 180, 40, Math.PI/12, 11*Math.PI/12);
+    smile.stroke();
+</script>
+    
+<script>
+    function drawFrowny(){
+        var y=document.getElementById("toggleFace");
+        y.onclick=function() {drawSmiley()};
+        y.innerHTML="Draw Smiley";
+         squareBackground.clearRect(0,0,500,300);
+
+    squareBackground.fillStyle="#cccccc";
+    squareBackground.fillRect(0,0, 500, 300);
+    
+  
+    smileyBorder.fillStyle="green";
+    smileyBorder.beginPath(); 
+    smileyBorder.arc(250,150,100,0, 2*Math.PI);
+    smileyBorder.fill();
+    
+
+    eye.fillStyle="yellow";
+    eye.beginPath();
+    eye.arc(200, 120, 10, 0, 2*Math.PI);
+    eye.fill();
+    
+    eye.arc(300, 120, 10, 0, 2*Math.PI);
+    eye.fill();
+    
+    
+
+    smile.strokeStyle="yellow";
+    smile.lineWidth="5";
+    smile.beginPath()
+    smile.arc(250, 230, 40, 13*Math.PI/12, 23*Math.PI/12);
+    smile.stroke();
+        
+       
+    }
+</script>
+<script>
+    function drawSmiley(){
+        var y=document.getElementById("toggleFace");
+        y.onclick= function(){drawFrowny()};
+        y.innerHTML="Draw Frowny";
+        squareBackground.clearRect(0,0,500,300);
+  
+    squareBackground.fillStyle="#cccccc";
+    squareBackground.fillRect(0,0, 500, 300);
+    
+ 
+    smileyBorder.fillStyle="green";
+    smileyBorder.beginPath(); 
+    smileyBorder.arc(250,150,100,0, 2*Math.PI);
+    smileyBorder.fill();
+    
+
+    eye.fillStyle="yellow";
+    eye.beginPath();
+    eye.arc(200, 120, 10, 0, 2*Math.PI);
+    eye.fill();
+    
+    eye.arc(300, 120, 10, 0, 2*Math.PI);
+    eye.fill();
+    
+    
+
+    smile.strokeStyle="yellow";
+    smile.lineWidth="5";
+    smile.beginPath()
+    smile.arc(250, 180, 40, Math.PI/12, 11*Math.PI/12);
+    smile.stroke();
+    }
+</script>
+
+</html>
+

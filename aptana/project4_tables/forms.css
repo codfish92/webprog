@@ -1,0 +1,12 @@
+form{
+    background-color:#cccccc;
+    border: black solid 5px;
+    padding:5px;
+}
+form fieldset{
+    border:pink solid 5px;   
+}
+form fieldset legend{
+ font-size: 140%; 
+    font-weight:bold;
+}
