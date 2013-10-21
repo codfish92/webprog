@@ -13,4 +13,36 @@ No it would be a bad idea to have a book1 and book2 column because they're a num
 
 chapter 9
 
+1. The principle of least privilage is giving a user the fewest amount of privilages they need to complete what they set out to do. 
+
+2. The grant command gives users privilages and revoke takes them away
+
+3. select and insert would be some common privilages given to users
+
+4. shutdown and super would be some common admin commands. They also get to create users and assign other privilages
+
+5. the auto_increment feature will increment this index automatically if the data type is incrementable. You cannot increament a blob.
+
+6. you would want to create an index for a column if you find that you are querring that column often and the column is not the primary key.
+
+7. you would use a smallint
+
+8. A varchar is different from a char because a varchar has a variable allocation length, while chars have to be defined. It is a speed vs. storage tradeoff. char are faster, but varchars take up less space.
+
+9. blob is a binary large object. It is commonly used for large strings. 
+
+chapter 10.
+
+1. the purpose of a join is to connect two or more tables of data. for instance, if you had customers and orders, you would want to know how manyh items a customer had by name, you would want to use a join.
+
+2. 
+
+3. You need to use dot notation in a join when you have a column of the same name in two tables. It can also make things more readable. ie customers and orders have both a column called customerid, so if you want to say the customer table's customerid, you would use customer.customerid
+
+4. In general it is true that you need one less join condition statment for the number of tables joining. ie if your joining 15 tables, you would most likely need 14 join conditions. 2 tables = 1 condition.
+
+5. Left join will show all matches on the left table to the right table, but if a match on the left table has no match on the right, it will add a row of null's. This is useful for checking if an entry exists in one table but not in any others. ie you could see which books dont have reviews by selecting books.bookname and reviews.bookname and left joining books and reviews. If any books dont have an entry in reviews, a null row will be added.
+
+6. You could join a table with itself if you want to compare a row of a table with another row from the same table. 
+
 
