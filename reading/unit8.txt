@@ -1,0 +1,16 @@
+chapter 8
+A primary key is a value that is unique to that partiuclar table that is used for identification. the primary key is what seperates data entries. ie a table of orders, an order id is a primary key, while total items ordered would not.
+
+A foreign key is value that corresponds to another table. ie a table with school clubs could have a meeting place that is a building id. that building id is the primary key for a table containing buildings. in the club table, the club id is the primary key, while the building id is the forign key.
+
+A schema is just a way that data is orginized. It show all tables and all the data that would go into them, including primary keys and forign keys. The three schemas are one to one, one to many, and many to many. 
+
+a one to one relation ship would be if you had a computer table and a owner table. The owner table could have a forign key of computers they own, or the computer table could have a forign key for the computers owner. a one to many relationship would be if a building table had a column for clubs that meet at that building. a many to many relation ship would be if maintiance workers had a set of buildings they work on. A single building may have many workers, and each worker may work on multiple buildings. 
+
+If I had a dog park and kept track of the people that came and all dogs they owned, and I put the name of the person every single time they showed up and at some point in time they got another dog, I would have to change every single instance of that persons name, not just once. If i only changed the last entry, then the data in the table is questionable, and its integroty is invalid.
+
+No it would be a bad idea to have a book1 and book2 column because they're a number of classes that use only one textbook. This would mean there would be a lot of null entries, wasting space and bring uncertainty into if the data is correct. This also wastes a lot of space.
+
+chapter 9
+
+
