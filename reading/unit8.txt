@@ -35,13 +35,17 @@ chapter 10.
 
 1. the purpose of a join is to connect two or more tables of data. for instance, if you had customers and orders, you would want to know how manyh items a customer had by name, you would want to use a join.
 
-2. 
+2. 	1. select * from customers, orders;
+	2. customerid name address order id customerid quantity
+	3. all combinations of all rows in all tables. This means that if you had a 3 row table joined with a 5 row table, you get a 15 row table as a result. 3 row joined with 5 row joined with 3 row would result in 45 row result. This really doesn't make much sense.
+	4. select * from customers, orders where customers.id = orders.customerid;
+	5. This type of join is called equi-join.
 
 3. You need to use dot notation in a join when you have a column of the same name in two tables. It can also make things more readable. ie customers and orders have both a column called customerid, so if you want to say the customer table's customerid, you would use customer.customerid
 
 4. In general it is true that you need one less join condition statment for the number of tables joining. ie if your joining 15 tables, you would most likely need 14 join conditions. 2 tables = 1 condition.
 
-5. Left join will show all matches on the left table to the right table, but if a match on the left table has no match on the right, it will add a row of null's. This is useful for checking if an entry exists in one table but not in any others. ie you could see which books dont have reviews by selecting books.bookname and reviews.bookname and left joining books and reviews. If any books dont have an entry in reviews, a null row will be added.
+5. Left join will show all matches on the left table to the right table, but if a match on the left table has no match on the right, it will add a row of null's. This is useful for checking if an entry exists in one table but not in any others. ie you could see which books dont have reviews by selecting books.bookname and reviews.bookname and left joining books and reviews. If any books dont have an entry in reviews, a null row will be added. ie if you add greg to the customers table, a left join will result in a table matching cyndi to two orders, jody to one, and greg to a null order.
 
 6. You could join a table with itself if you want to compare a row of a table with another row from the same table. 
 
